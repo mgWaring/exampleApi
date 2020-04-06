@@ -2,7 +2,10 @@
 
 const express = require('express');
 const fs = require('fs')
+
+//mine
 const videoFinder = require('./FindVideos')
+const hydrateFilters = require('./HydrateFilters')
 
 // Constants
 const PORT = 3000;
@@ -11,7 +14,7 @@ const HOST = '0.0.0.0';
 // App
 const app = express();
 app.get('/', (req, res) => {
-    res.send('Hello World War 3 From Docker');
+    res.send('Hello World from Docker');
 });
 
 app.get('/save', (req, res) => {
