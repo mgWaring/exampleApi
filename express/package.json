@@ -1,0 +1,22 @@
+{
+  "name": "mgwaring0-express-api",
+  "version": "0.0.01",
+  "description": "A basic Express backend for my experiments",
+  "license": "MIT",
+  "main": "src/api.js",
+  "scripts": {
+    "test": "tape tests/**/*.test.js | tap-dot",
+    "server": "nodemon src/api.js"
+  },
+  "author": "Max Waring",
+  "dependencies": {
+    "express": "^4.17.1",
+    "fs": "^0.0.1-security",
+    "googleapis": "^48.0.0",
+    "nodemon": "^2.0.2"
+  },
+  "devDependencies": {
+    "tap-dot": "^2.0.0",
+    "tape": "^4.13.2"
+  }
+}
