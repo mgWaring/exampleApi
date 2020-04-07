@@ -1,6 +1,6 @@
 'use strict'
 
 module.exports = (rawFilters) => {
-    let hydrated = rawFilters.trim().split("\n")
+    let hydrated = rawFilters.toLowerCase().trim().split("\n")
     return hydrated;
 }

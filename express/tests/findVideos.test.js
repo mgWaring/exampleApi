@@ -2,8 +2,8 @@ const test = require('tape')
 const methodUnderTest = require('../src/FindVideos')
 
 const input = {
-    part: 'part',
-    name: 'name'
+    filters: ['part','other'],
+    ids: ['name','other']
 }
 
 const expected = {
@@ -13,6 +13,8 @@ const expected = {
 
 test('Test params are passed nicely', t => {
     methodUnderTest(input)
-    .then(result => t.deepEqual(result, expected))
+    .then(result =>{ 
+        console.log(result)
+        t.deepEqual(result, expected)})
     t.end()
 })
