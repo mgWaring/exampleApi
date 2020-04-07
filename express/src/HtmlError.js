@@ -9,7 +9,7 @@ module.exports = (message) => {
   <title>Example Server Response</title>
 </head>
 <body>
-<div style="width:60%;margin:auto;padding:20px;border:solid 5px lightgreen;border-radius:20px;word-wrap: break-word;">
+ <div style="width:60%;margin:auto;padding:20px;border:solid 5px indianred;border-radius:20px;word-wrap: break-word;">
  <p>${message}
  </div>
 </body>

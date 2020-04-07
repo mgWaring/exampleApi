@@ -6,11 +6,10 @@ const callback = (error, result, fields) => {
 }
 
 module.exports = (videos) => {
-    console.log(videos)
     return new Promise((resolve) => {
         resolve({
-            sql: 'INSERT INTO ? VALUES ?',
-            params: ['videos', videos],
+            sql: 'INSERT INTO videos (title,date) VALUES ?',
+            params: [videos],
             callback : callback
         })
     })

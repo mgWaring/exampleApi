@@ -19,7 +19,7 @@ services:
       MYSQL_ROOT_PASSWORD: Totally_Secure
       MYSQL_DATABASE: mydb
       MYSQL_USER: mydb_user
-      MYSQL_PASSWORD: mydb_password        
+      MYSQL_PASSWORD: mydb_password      
     networks: 
       - data
   adminer:
