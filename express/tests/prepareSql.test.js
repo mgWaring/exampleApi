@@ -1,5 +1,5 @@
 const test = require('tape')
-const prepareSql = require('../src/prepareSql')
+const prepareSql = require('../src/PrepareSql')
 
 const input = [
     [
@@ -8,7 +8,7 @@ const input = [
     ]
 ]
 
-const expected = {git
+const expected = {
     sql: 'INSERT INTO ? VALUES ?',
     params: ['mydb', input]
 }

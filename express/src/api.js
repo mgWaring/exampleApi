@@ -32,7 +32,7 @@ app.get('/save', (req, res) => {
     fs.readFile('search_filter', 'utf8')
     .then(file => hydrateFilters(file))
     .then(filters => findVideos(filters))
-    .then(videos => saveVideos(videos))
+    .then(videos => prepareSql(videos))
     .then(query => connection.query(query.sql, query.params, query.callback))
     .then(result => buildResponse(result))
     .then(response => htmlWrap(response))
